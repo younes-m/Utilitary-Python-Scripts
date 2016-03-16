@@ -14,7 +14,6 @@ i = 1
 while True :
     try :
         if newname(sys.argv[i]) :
-            temp = sys.argv[i]
             os.rename(sys.argv[i], newname(sys.argv[i]))
             print ('{0} -> {1}'.format(sys.argv[i].split('\\')[-1], newname(sys.argv[i]).split('\\')[-1]))
             r += 1
